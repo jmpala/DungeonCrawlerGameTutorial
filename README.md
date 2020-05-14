@@ -10,3 +10,7 @@ A Simple project, that tries to be an entry point for those willing to understan
 
 ## Snapshot picture of how Artemis-odb works
 ![](images/DungeonCrawlerGame.png)
+
+## Contact info
+In case you would like contribute in any way to here is my email,
+contact@jmpalazzolo.io
