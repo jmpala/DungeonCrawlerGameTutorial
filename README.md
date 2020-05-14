@@ -1,6 +1,6 @@
 # DungeonCrawlerGameTutorial
 
-//TODO: (Picture)
+![](images/gameScreenshot.png)
 
 A Simple project, that tries to be an entry point for those willing to understand Artemis-odb in conjunction with LibGDX. The same is based on the following [post](https://github.com/junkdog/artemis-odb/wiki/Introduction-to-Entity-Systems)
 
@@ -9,4 +9,4 @@ A Simple project, that tries to be an entry point for those willing to understan
 * [Artemis-odb](https://github.com/junkdog/artemis-odb)
 
 ## Snapshot picture of the project
-//TODO: (Picture)
+![](images/DungeonCrawlerGame.png)
