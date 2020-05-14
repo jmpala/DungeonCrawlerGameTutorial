@@ -8,5 +8,5 @@ A Simple project, that tries to be an entry point for those willing to understan
 * [LibGDX](https://libgdx.badlogicgames.com/) (Extensions Box2D)
 * [Artemis-odb](https://github.com/junkdog/artemis-odb)
 
-## Snapshot picture of the project
+## Snapshot picture of how Artemis-odb works
 ![](images/DungeonCrawlerGame.png)
