@@ -111,9 +111,10 @@ public class PlayState extends GameState {
         Sound sound = assetManager.get("sounds/walk.wav", Sound.class);
         entitySoundsMap.put(io.jmpalazzolo.components.Sound.Sounds.WALK,sound);
 
+        atlasRegions = textureAtlas.findRegions("knight_f_run_anim");
         // Example of fluid entity
         E.E(artemisWorld.create())
-                .spatialTexture(new Texture(Gdx.files.internal("Player/knight/knight_f_idle_anim_f3.png")))
+                .spatialTexture(new Texture(Gdx.files.internal("knight/greg_knight_afk.png")))
                 .motionPosition(new Vector2(Constants.MAP_MIDDLE_SCREEN_X, Constants.MAP_MIDDLE_SCREEN_y))
                 .motionDirection(Motion.Direction.RIGHT)
                 .spatialEntityAnimations(entityAnimationsMap)

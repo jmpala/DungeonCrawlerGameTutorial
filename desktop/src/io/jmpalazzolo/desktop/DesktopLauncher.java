@@ -2,7 +2,6 @@ package io.jmpalazzolo.desktop;
 
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
-import io.jmpalazzolo.Constants;
 import io.jmpalazzolo.Game;
 
 public class DesktopLauncher {
@@ -13,9 +12,9 @@ public class DesktopLauncher {
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
 
 		// Added to the config of the App some values
-		config.width = Constants.WIDTH; // Sets the Width of the screen
-		config.height = Constants.HEIGHT; // Sets the Height of the screen
-		config.title = Constants.TITLE; // Sets the String to show as title
+		config.width = 1920; // Sets the Width of the screen
+		config.height = 1080; // Sets the Height of the screen
+		config.title = "Basic Artemis Game"; // Sets the String to show as title
 
 		// The application launches the class Game.class with its own configuration
 		new LwjglApplication(new Game(), config);

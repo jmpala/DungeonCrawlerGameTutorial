@@ -4,9 +4,10 @@ buildscript {
     repositories {
         mavenLocal()
         mavenCentral()
+        maven { url "https://repo.gradle.org/gradle/libs-releases" }
         maven { url "https://plugins.gradle.org/m2/" }
         maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
-        jcenter()
+//        jcenter()
         google()
     }
     dependencies {
@@ -39,7 +40,7 @@ allprojects {
     repositories {
         mavenLocal()
         mavenCentral()
-        jcenter()
+//        jcenter()
         google()
         maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
         maven { url "https://oss.sonatype.org/content/repositories/releases/" }
@@ -51,7 +52,7 @@ project(":desktop") {
 
 
     dependencies {
-        compile project(":core")
+        implementation project(":core")
         api "com.badlogicgames.gdx:gdx-backend-lwjgl:$gdxVersion"
         api "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
         api "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-desktop"
@@ -73,17 +74,17 @@ project(":core") {
     }
 
     dependencies {
-        compile project(":components")
-        compile "com.google.code.gson:gson:2.8.6" // Google Json
+        implementation project(":components")
+        implementation "com.google.code.gson:gson:2.8.6" // Google Json
         api "com.badlogicgames.gdx:gdx:$gdxVersion"
         api "com.badlogicgames.gdx:gdx-box2d:$gdxVersion"
 
-        compileOnly "net.onedaybeard.artemis:artemis-fluid-core:$artemisVersion"
+        implementation "net.onedaybeard.artemis:artemis-fluid-core:$artemisVersion"
 
 
         // Artemis-odb
-        compile "net.onedaybeard.artemis:artemis-odb:$artemisVersion"
-        compile "net.onedaybeard.artemis:artemis-odb-serializer-json-libgdx:$artemisVersion"
+        implementation "net.onedaybeard.artemis:artemis-odb:$artemisVersion"
+        implementation "net.onedaybeard.artemis:artemis-odb-serializer-json-libgdx:$artemisVersion"
 
         // Artemis-odb bonus functionality (systems, events, components).
 //        compile "net.mostlyoriginal.artemis-odb:contrib-core:$artemisContribVersion"
@@ -99,13 +100,13 @@ project(":components") {
     apply plugin: "java"
 
     dependencies {
-        compile "com.badlogicgames.gdx:gdx:$gdxVersion"
-        compile "com.badlogicgames.gdx:gdx:$gdxVersion"
-        compile "com.badlogicgames.gdx:gdx-box2d:$gdxVersion"
+        implementation "com.badlogicgames.gdx:gdx:$gdxVersion"
+        implementation "com.badlogicgames.gdx:gdx:$gdxVersion"
+        implementation "com.badlogicgames.gdx:gdx-box2d:$gdxVersion"
 
         // components to expose
-        compile "net.onedaybeard.artemis:artemis-odb:$artemisVersion"
-        compile "net.mostlyoriginal.artemis-odb:contrib-core:$artemisContribVersion"
+        implementation "net.onedaybeard.artemis:artemis-odb:$artemisVersion"
+        implementation "net.mostlyoriginal.artemis-odb:contrib-core:$artemisContribVersion"
         //compile "net.mostlyoriginal.artemis-odb:contrib-jam:$artemisContribVersion"
 
     }

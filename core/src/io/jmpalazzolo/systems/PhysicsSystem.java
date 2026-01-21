@@ -49,7 +49,7 @@ public class PhysicsSystem extends FluidIteratingSystem {
                 break;
             case CREATED:
                 body = e.physicsBody();
-                e.motionPosition(new Vector2(body.getPosition().x - (e.spatialTexture().getWidth() / 2), body.getPosition().y - (e.spatialTexture().getHeight() / 2)));
+                e.motionPosition(new Vector2(body.getPosition().x - ((float) e.spatialTexture().getWidth() / 2), body.getPosition().y - ((float) e.spatialTexture().getHeight() / 2) + 6));
 
                 if(body.getLinearVelocity().x == 0f && body.getLinearVelocity().y == 0f) {
                     e.motionCurrentAnimationType(Motion.AnimationTypes.IDLE);
